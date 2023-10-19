@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Intro Live</title>
+
+    <style>
+        /* small mobile screen */
+        body {
+            background-color: blue;
+        } 
+
+        h1 {
+            font-size: 2rem;
+        }
+
+
+        /* Media query, check screen width */
+        /* if screen is bigger than 480px apply these changes below */
+        /* bigger mobile screen */
+        @media screen and (min-width: 481px) {
+            body {
+                background-color: green;
+            } 
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+         /* if screen is bigger than 769px apply these changes below */
+         /* Laptop screen or bigger */
+         @media screen and (min-width: 769px) {
+            body {
+                background-color: red;
+            } 
+
+            h1 {
+                font-size: 6rem;
+            }
+        }
+
+
+        @media screen and (min-width: 1280px) {
+            body {
+                background-color: yellow;
+            } 
+
+            h1 {
+                font-size: 8rem;
+            }
+        }
+
+        /* if screen is smaller than 480px apply these changes below */
+        /* @media screen and (max-width: 480px){
+            body {
+                background-color: blue;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <h1>Body</h1>
+</body>
+</html>
